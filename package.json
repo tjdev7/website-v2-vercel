@@ -1,6 +1,6 @@
 {
   "name": "open-austin-website-2025",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://open-austin.github.io/website-v2-vercel/",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && next export",
+    "export": "DEPLOY_TARGET=GH_PAGES next export",
     "predeploy": "npm run build",
     "deploy" : "npm run build&&gh-pages -d build"
   },
